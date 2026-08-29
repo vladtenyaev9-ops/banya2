@@ -1,0 +1,92 @@
+   .pricing {
+        background: var(--birch-dim);
+      }
+      .price-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+      }
+      .price-card {
+        background: var(--birch);
+        border: 1px solid var(--birch-line);
+        padding: 44px 40px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        transition:
+          border-color 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .price-card:hover {
+        border-color: var(--ember);
+        box-shadow: 0 24px 50px -30px rgba(27, 33, 25, 0.3);
+      }
+      .price-card .badge {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        background: var(--ember);
+        color: var(--birch);
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding: 6px 14px;
+      }
+      .price-label {
+        font-family: var(--mono);
+        font-size: 12.5px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--moss-dim);
+        margin-bottom: 16px;
+      }
+      .price-card h3 {
+        font-size: 24px;
+        margin-bottom: 6px;
+      }
+      .price-value {
+        font-family: var(--serif);
+        font-size: 44px;
+        color: var(--ember-deep);
+        margin: 18px 0 6px;
+      }
+      .price-value span {
+        font-family: var(--sans);
+        font-size: 15px;
+        color: #6b6252;
+        font-weight: 400;
+      }
+      .price-sub {
+        font-size: 13.5px;
+        color: #6b6252;
+        margin-bottom: 24px;
+      }
+      .price-list {
+        margin: 0 0 32px;
+      }
+      .price-list li {
+        display: flex;
+        gap: 10px;
+        font-size: 14.5px;
+        color: #4a4234;
+        padding: 8px 0;
+        border-top: 1px solid var(--birch-line);
+      }
+      .price-list li:first-child {
+        border-top: none;
+      }
+      .price-list li::before {
+        content: "—";
+        color: var(--moss-dim);
+        flex-shrink: 0;
+      }
+      .price-card .btn {
+        margin-top: auto;
+        align-self: flex-start;
+      }
+      @media (max-width: 860px) {
+        .price-grid {
+          grid-template-columns: 1fr;
+        }
+      }

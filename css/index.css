@@ -1,0 +1,24 @@
+/* base */
+@import "./base/global.css";
+@import "./base/reset.css";
+@import "./base/var.css";
+
+
+/* blocks */
+
+@import "./blocks/header.css";
+@import "./blocks/hero.css";
+@import "./blocks/facts.css";
+@import "./blocks/about.css";
+@import "./blocks/amenities.css";
+@import "./blocks/pricing.css";
+@import "./blocks/ritual.css";
+@import "./blocks/formats.css";
+@import "./blocks/addons.css";
+@import "./blocks/gallery.css";
+@import "./blocks/trust.css";
+@import "./blocks/contact.css";
+@import "./blocks/book.css";
+@import "./blocks/footer.css";
+@import "./blocks/burger-menu.css"
+

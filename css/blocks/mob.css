@@ -1,0 +1,36 @@
+ .sticky-cta {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 90;
+        background: var(--ink);
+        border-top: 1px solid var(--line-on-ink);
+        padding: 12px 16px;
+        display: none;
+        align-items: center;
+        gap: 10px;
+      }
+      .sticky-cta a.btn {
+        flex: 1;
+        justify-content: center;
+      }
+      .sticky-cta a.icon-btn {
+        width: 46px;
+        height: 46px;
+        border: 1px solid var(--line-on-ink-strong);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--birch);
+        flex-shrink: 0;
+      }
+      @media (max-width: 760px) {
+        .sticky-cta {
+          display: flex;
+        }
+        body {
+          padding-bottom: 72px;
+        }
+      }

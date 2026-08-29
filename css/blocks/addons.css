@@ -1,0 +1,37 @@
+   .addons {
+        background: var(--ink-2);
+        color: var(--birch);
+        border-top: 1px solid var(--line-on-ink);
+        border-bottom: 1px solid var(--line-on-ink);
+      }
+      .addons .wrap {
+        padding: 34px 32px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+      .addons-label {
+        font-family: var(--mono);
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--moss);
+        flex-shrink: 0;
+      }
+      .addons-list {
+        display: flex;
+        gap: 36px;
+        flex-wrap: wrap;
+      }
+      .addons-list div {
+        font-size: 14px;
+        display: flex;
+        gap: 8px;
+        align-items: baseline;
+      }
+      .addons-list b {
+        font-family: var(--mono);
+        color: var(--ember-light);
+        font-weight: 400;
+      }

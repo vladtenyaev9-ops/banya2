@@ -1,0 +1,45 @@
+ .amenities {
+        background: var(--ink);
+        color: var(--birch);
+      }
+      .amenity-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        border-top: 1px solid var(--line-on-ink);
+        border-left: 1px solid var(--line-on-ink);
+      }
+      .amenity {
+        padding: 30px 26px;
+        border-right: 1px solid var(--line-on-ink);
+        border-bottom: 1px solid var(--line-on-ink);
+        transition: background 0.3s ease;
+      }
+      .amenity:hover {
+        background: rgba(245, 239, 225, 0.03);
+      }
+      .amenity .icon {
+        color: var(--moss);
+        width: 24px;
+        height: 24px;
+        margin-bottom: 18px;
+      }
+      .amenity h4 {
+        font-family: var(--sans);
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 6px;
+      }
+      .amenity p {
+        font-size: 13px;
+        color: rgba(245, 239, 225, 0.6);
+      }
+      @media (max-width: 900px) {
+        .amenity-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 560px) {
+        .amenity-grid {
+          grid-template-columns: 1fr;
+        }
+      }

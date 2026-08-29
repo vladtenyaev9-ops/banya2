@@ -1,0 +1,23 @@
+  :root {
+        --ink: #1b2119;
+        --ink-2: #212920;
+        --ink-3: #2a3327;
+        --birch: #f5efe1;
+        --birch-dim: #eae1ca;
+        --birch-line: rgba(27, 33, 25, 0.12);
+        --ember: #c1602c;
+        --ember-deep: #8f3f1d;
+        --ember-light: #e2905b;
+        --moss: #8b9a6c;
+        --moss-dim: #5c6a47;
+        --bark: #33261b;
+        --line-on-ink: rgba(245, 239, 225, 0.14);
+        --line-on-ink-strong: rgba(245, 239, 225, 0.28);
+
+        --serif: "PT Serif", Georgia, serif;
+        --sans: "PT Sans", Arial, sans-serif;
+        --mono: "PT Mono", "Courier New", monospace;
+
+        --container: 1180px;
+        --radius: 2px;
+      }

@@ -1,0 +1,112 @@
+ .final-cta {
+        position: relative;
+        overflow: hidden;
+        background:
+          radial-gradient(
+            ellipse 640px 420px at 12% 30%,
+            rgba(193, 96, 44, 0.28),
+            transparent 65%
+          ),
+          var(--ink);
+        color: var(--birch);
+        border-top: 1px solid var(--line-on-ink);
+      }
+      .final-cta .ritual-line {
+        top: auto;
+        bottom: 0;
+        opacity: 0.6;
+      }
+      .final-cta-grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 60px;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+      }
+      .final-cta h2 {
+        font-size: clamp(28px, 3.2vw, 42px);
+        font-style: italic;
+        font-weight: 400;
+        max-width: 14ch;
+        line-height: 1.18;
+        margin-bottom: 20px;
+      }
+      .final-cta h2 em {
+        font-style: normal;
+        font-weight: 700;
+        color: var(--ember-light);
+      }
+      .final-cta-sub {
+        font-size: 15.5px;
+        color: rgba(245, 239, 225, 0.66);
+        max-width: 44ch;
+        margin-bottom: 34px;
+      }
+      .final-cta-actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .final-cta .btn-ghost-dark:hover {
+        background: rgba(245, 239, 225, 0.06);
+      }
+
+      .cta-card {
+        background: var(--ink-2);
+        border: 1px solid var(--line-on-ink);
+        padding: 34px 32px;
+      }
+      .cta-card .cta-label {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--moss);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 18px;
+      }
+      .cta-card .cta-phone {
+        font-family: var(--serif);
+        font-size: 28px;
+        font-style: italic;
+        color: var(--birch);
+        display: block;
+        margin-bottom: 6px;
+      }
+      .cta-card .cta-note {
+        font-size: 13px;
+        color: rgba(245, 239, 225, 0.55);
+        margin-bottom: 22px;
+      }
+      .cta-card .divider {
+        height: 1px;
+        background: var(--line-on-ink);
+        margin: 22px 0;
+      }
+      .cta-card .cta-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13.5px;
+        color: rgba(245, 239, 225, 0.75);
+        margin-bottom: 10px;
+      }
+      .cta-card .cta-row .icon {
+        width: 16px;
+        height: 16px;
+        color: var(--moss);
+        flex-shrink: 0;
+      }
+      .cta-card .social-row {
+        margin-top: 20px;
+      }
+      @media (max-width: 900px) {
+        .final-cta-grid {
+          grid-template-columns: 1fr;
+          gap: 36px;
+        }
+      }
